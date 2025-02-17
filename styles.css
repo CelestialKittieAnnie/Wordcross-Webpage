@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    color: #333;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+.theme-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-button:hover {
+    background-color: #ff6347;
+}
+
+.wordcross-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    gap: 2px;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+}
+
+.wordcross-cell {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.black-square {
+    background-color: #000;
+    border: none;
+}
+
+.correct {
+    background-color: #90ee90;
+}
+
+.wrong {
+    background-color: #ffcccb;
+}
+
+.number-label {
+    font-weight: bold;
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.hints-container {
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.hints-list {
+    list-style-type: none;
+    padding: 0;
+}
